@@ -1,9 +1,10 @@
 import React from 'react';
+import Sidebar from './containers/Sidebar';
 
-function App() {
+const App = () => {
   return (
     <div className="container">
-        Test
+        <Sidebar />
     </div>
   );
 }
