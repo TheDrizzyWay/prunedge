@@ -13,8 +13,22 @@
     box-shadow: 4px 0px 24px #E3E3E3;
 }
 
-.dashboard {
+.content {
+    display: flex;
+    flex-direction: column;
+    background: #f6f9ff;
+    flex: 1;
 
+    &__wrapper {
+        margin: 5rem 5rem;
+    }
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid black;
 }
 
 .documents {

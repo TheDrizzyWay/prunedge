@@ -17,7 +17,7 @@
   
       img {
         width: 100%;
-        margin: 1rem auto;
+        margin: 2rem auto;
         border-radius: 1.6rem;
         object-fit: contain;
       }
@@ -39,6 +39,7 @@
 
     &__fullname--bold {
         font-family: 'Roboto', sans-serif;
+        padding-top: 0.75rem;
     }
   
     &__designation {
@@ -58,74 +59,146 @@
     }
   }
 
-  .menu {
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+
+  .item {
     display: flex;
-    flex-direction: column;
-    margin: 2rem 0;
-  
-    .item {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 3.5rem;
+
+    .badge {
+      width: 2rem;
+      height: 1.5rem;
+      margin: 10px 48px 10px 0;
+      background: $color-primary;
+      border-radius: 0.7rem;
+      text-align: center;
+
+      p {
+        margin: 0 auto;
+        padding: 0 auto;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+        color: $color-white;
+      }
+    }
+
+    &__logout {
+      margin-bottom: 17rem;
+    }
+  }
+
+  .filler {
+    height: 35rem;
+  }
+
+  a {
+    display: block;
+    padding: 1rem 0;
+    font-size: 1.3rem;
+    line-height: 14px;
+    color: #8A94A6;
+    text-decoration: none;
+    border-left: 3px solid $color-white;
+
+    i {
+      padding: 0 20px 0 20px;
+    }
+  }
+
+  .active {
+    color: #43536F;
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    border-left: 3px solid $color-primary;
+
+    i {
+        padding-left: 7.5px;
+    }
+  }
+
+  .logout {
+    color: $color-black-sub;
+
+    i {
+      color: #c9ced6;
+    }
+  }
+}
+
+.dashboard {
+  p {
+    font-size: 2.4rem;
+    line-height: 20px;
+    padding-top: 4rem;
+    color: #43536F;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 6rem;
+
+    &--statistics {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      height: 3.5rem;
-  
-      .badge {
-        width: 2rem;
-        height: 1.5rem;
-        margin: 10px 48px 10px 0;
-        background: $color-primary;
-        border-radius: 0.7rem;
-        text-align: center;
-  
-        p {
-          margin: 0 auto;
-          padding: 0 auto;
-          font-family: 'Montserrat', sans-serif;
-          font-size: 1rem;
-          color: $color-white;
+      justify-content: stretch;
+
+      .dashboard__info--stat {
+        display: flex;
+        flex-direction: row;
+        margin: 1rem 0;
+        border-right: 0.5px solid #A6AEBC;
+
+        .stat-icon {
+          height: 3rem;
+          width: 3rem;
+          margin: 0.5rem 0;
+          border-radius: 50%;
+          background: black;
+
+          i {
+            font-size: 10px;
+            padding: auto auto;
+          }
+        }
+
+        .stat-icon-purple {
+          background: #B073FD;
+        }
+
+        .stat-icon-blue {
+          background: #8FD7FF;
+        }
+
+        .stat-icon-turquoise {
+          background: #82B1ED;
+        }
+
+        .stat-text {
+          p {
+            padding: 0 1rem;
+            font-size: 1rem;
+          }
+
+          h4 {
+            padding: 0 1rem;
+            font-size: 1rem;
+            line-height: 20px;
+          }
         }
       }
 
-      &__logout {
-        margin-bottom: 17rem;
-      }
-    }
-  
-    .filler {
-      height: 35rem;
-    }
-  
-    a {
-      display: block;
-      padding: 1rem 0;
-      font-size: 1.3rem;
-      line-height: 14px;
-      color: #8A94A6;
-      text-decoration: none;
-      border-left: 3px solid $color-white;
-  
-      i {
-        padding: 0 20px 0 20px;
-      }
-    }
-  
-    .active {
-      color: #43536F;
-      font-weight: bold;
-      padding-top: 1rem;
-      padding-left: 1rem;
-      border-left: 3px solid $color-primary;
-
-      i {
-          padding-left: 7.5px;
-      }
-    }
-  
-    .logout {
-      color: $color-black-sub;
-  
-      i {
-        color: #c9ced6;
+      .dashboard__info--stat:last-child {
+        border-right: none;
       }
     }
   }
+
+} 
