@@ -11,18 +11,18 @@ const DocumentsView = () => {
                 </div>
                 <div className="documents__pending--table">
                     <table>
-                        <tr class="table-header">
+                        <tr className="table-header">
                             <th>File name</th>
-                            <th>Class <div class="filler-2"></div></th>
-                            <th>Due Date <div class="filler-2"></div></th>
+                            <th>Class <div className="filler-2"></div></th>
+                            <th>Due Date <div className="filler-2"></div></th>
                             <th>Owner</th>
                         </tr>
 
-                        <tr class="table-row">
-                            <td class="file-name-data">Application for Leave</td>
+                        <tr className="table-row">
+                            <td className="file-name-data">Application for Leave</td>
                             <td>Proposal</td>
                             <td>12-Jan-2018</td>
-                            <td class="review-column">
+                            <td className="review-column">
                                 <div>
                                     <img src={pic} alt="owner pic"/>
                                 </div>
@@ -31,11 +31,11 @@ const DocumentsView = () => {
                             </td>
                         </tr>
 
-                        <tr class="table-row">
-                            <td class="file-name-data">Application for Leave</td>
+                        <tr className="table-row">
+                            <td className="file-name-data">Application for Leave</td>
                             <td>Application</td>
                             <td>12-Jan-2018</td>
-                            <td class="review-column">
+                            <td className="review-column">
                                 <div>
                                 <img src={pic} alt="owner pic"/>
                                 </div>
@@ -44,11 +44,11 @@ const DocumentsView = () => {
                             </td>
                         </tr>
 
-                        <tr class="table-row">
-                            <td class="file-name-data">Application for Leave</td>
+                        <tr className="table-row">
+                            <td className="file-name-data">Application for Leave</td>
                             <td>Proposal</td>
                             <td>12-Jan-2018</td>
-                            <td class="review-column">
+                            <td className="review-column">
                                 <div>
                                     <img src={pic} alt="owner pic"/>
                                 </div>
@@ -57,11 +57,11 @@ const DocumentsView = () => {
                             </td>
                         </tr>
 
-                        <tr class="table-row">
-                            <td class="file-name-data">Application for Leave</td>
+                        <tr className="table-row">
+                            <td className="file-name-data">Application for Leave</td>
                             <td>Proposal</td>
                             <td>12-Jan-2018</td>
-                            <td class="review-column">
+                            <td className="review-column">
                                 <div>
                                     <img src={pic} alt="owner pic"/>
                                 </div>

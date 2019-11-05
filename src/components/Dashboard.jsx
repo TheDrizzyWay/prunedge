@@ -9,7 +9,7 @@ const Dashboard = () => {
                 <div className="dashboard__info--statistics">
                     <div className="dashboard__info--stat">
                         <div className="stat-icon stat-icon-purple">
-                            <i class="fas fa-sitemap"></i>
+                            <i className="fas fa-sitemap"></i>
                         </div>
                         <div className="stat-text">
                             <p>Departments</p>
@@ -19,7 +19,7 @@ const Dashboard = () => {
 
                     <div className="dashboard__info--stat">
                         <div className="stat-icon stat-icon-blue">
-                            <i class="fas fa-user"></i>
+                            <i className="fas fa-user"></i>
                         </div>
                         <div className="stat-text">
                             <p>Members</p>
@@ -29,7 +29,7 @@ const Dashboard = () => {
 
                     <div className="dashboard__info--stat">
                         <div className="stat-icon stat-icon-turquoise">
-                            <i class="fas fa-users"></i>
+                            <i className="fas fa-users"></i>
                         </div>
                         <div className="stat-text">
                             <p>Units</p>
@@ -39,7 +39,7 @@ const Dashboard = () => {
 
                     <div className="dashboard__info--stat">
                         <div className="stat-icon stat-icon-green">
-                            <i class="fas fa-archive"></i>
+                            <i className="fas fa-archive"></i>
                         </div>
                         <div className="stat-text">
                             <p>Documents</p>
@@ -47,8 +47,8 @@ const Dashboard = () => {
                         </div>
                     </div>
                 </div>
-                <button class="new-document-btn">
-                    <i class="fas fa-plus"></i> <p>New Document</p>
+                <button className="new-document-btn">
+                    <i className="fas fa-plus"></i> <p>New Document</p>
                 </button>
             </div>
         </div>

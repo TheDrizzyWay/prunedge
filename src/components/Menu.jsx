@@ -23,12 +23,12 @@ const Menu = () => {
             </div>
             <div className="item">
                 <a href="/">
-                    <i class="fas fa-archive"></i> Archive
+                    <i className="fas fa-archive"></i> Archive
                 </a>
             </div>
             <div className="item">
                 <a href="/">
-                    <i class="fas fa-cog"></i> Settings
+                    <i className="fas fa-cog"></i> Settings
                 </a>
                 <div className="arrow"></div>
             </div>
