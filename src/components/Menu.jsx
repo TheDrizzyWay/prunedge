@@ -30,6 +30,7 @@ const Menu = () => {
                 <a href="/">
                     <i class="fas fa-cog"></i> Settings
                 </a>
+                <div className="arrow"></div>
             </div>
             <div className="filler"></div>
             <div className="item item__logout">

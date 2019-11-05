@@ -58,7 +58,7 @@ const DocumentsView = () => {
 
                         <tr class="table-row">
                             <td class="file-name-data">Application for Leave</td>
-                            <td>Application</td>
+                            <td>Proposal</td>
                             <td>12-Jan-2018</td>
                             <td class="review-column">
                                 <div>
@@ -75,7 +75,33 @@ const DocumentsView = () => {
                 <div className="documents__summary--header">
                     <h2>Documents Summary</h2>
                 </div>
-                <div className="documents__summary--pie"></div>
+                <div className="documents__summary--pie">
+                    <div className="inner-pie">
+                        <div className="amount-pending">
+                            <h1>12</h1>
+                            <p>Pending</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="documents__summary--stats">
+                    <div className="status">
+                        <div className="status-approved"></div>
+                        <p>Approved</p>
+                        <span>32</span>
+                    </div>
+
+                    <div className="status">
+                        <div className="status-rejected"></div>
+                        <p>Rejected</p>
+                        <span>15</span>
+                    </div>
+                    
+                    <div className="status status-wrap">
+                        <div className="status-pending"></div>
+                        <p>Pending</p>
+                        <span>12</span>
+                    </div>
+                </div>
             </div>
         </div>
     );

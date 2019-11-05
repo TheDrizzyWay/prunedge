@@ -1,7 +1,6 @@
 // User Component
 .user {
-    display: flex;
-    flex-direction: column;
+  @include flex-display(column);
   
     p {
       margin: 0;
@@ -62,13 +61,11 @@
 
   // Menu Component
 .menu {
-  display: flex;
-  flex-direction: column;
+  @include flex-display(column);
   margin: 2rem 0;
 
   .item {
-    display: flex;
-    flex-direction: row;
+    @include flex-display(row);
     justify-content: space-between;
     height: 3.5rem;
 
@@ -87,6 +84,15 @@
         font-size: 1rem;
         color: $color-white;
       }
+    }
+
+    .arrow {
+      width: 0;
+      height: 0;
+      margin: 1.5rem 2rem 1rem 0;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-bottom: 7px solid #C4C4C4;
     }
 
     &__logout {
@@ -147,19 +153,16 @@
   }
 
   &__info {
-    display: flex;
-    flex-direction: row;
+    @include flex-display(row);
     justify-content: space-between;
     height: 6rem;
 
     &--statistics {
-      display: flex;
-      flex-direction: row;
+      @include flex-display(row);
       justify-content: space-around;
 
       .dashboard__info--stat {
-        display: flex;
-        flex-direction: row;
+        @include flex-display(row);
         margin: 1rem 0;
         min-width: 14rem;
         border-right: 0.5px solid #A6AEBC;
@@ -248,15 +251,14 @@
 
 }
 
+// DocumentsView Component
 .documents {
   &__pending {
-    display: flex;
-    flex-direction: column;
+    @include flex-display(column);
     flex: 0 0 68%;
 
     &--header {
-      display: flex;
-      flex-direction: row;
+      @include flex-display(row);
       justify-content: space-between;
       margin-top: 3.5%;
 
@@ -328,8 +330,7 @@
         }
 
         .review-column {
-          display: flex;
-          flex-direction: row;
+          @include flex-display(row);
           justify-content: space-between;
           white-space: nowrap;
           overflow: hidden;
@@ -355,10 +356,9 @@
   }
 
   &__summary {
-    border: 1px solid black;
-    display: flex;
+    border-left:  0.5px solid #CED8E7;
+    @include flex-display(column);
     flex: 1;
-    flex-direction: column;
 
     &--header {
       margin-top: 8%;
@@ -388,17 +388,157 @@
       margin: 2rem auto;
       border-radius: 50%;
       border-right-color: #82B1ED;
-      border-top-color: #FFAD0D;
-      border-bottom-color: #82B1ED;
-      border-left-color: #277D61;
+      border-top-color: #82B1ED;
+      border-bottom-color: #277D61;
+      border-left-color: #FFAD0D;
       border-width: 2rem;
       border-style: solid;
-      -webkit-transform: rotate(300deg);
-      -moz-transform: rotate(300deg);
-      -o-transform: rotate(300deg);
-      -ms-transform: rotate(300deg);
-      transform: rotate(300deg);
+
+      .inner-pie {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border-radius: 50%;
+        border-right-color: #82B1ED;
+        border-top-color: #82B1ED;
+        border-bottom-color: #277D61;
+        border-left-color: #FFAD0D;
+        border-width: 0.5rem;
+        border-style: solid;
+        opacity: 0.6;
+
+        .amount-pending {
+          width: 80%;
+          height: 90%;
+          margin: 3rem 2rem;
+
+          h1 {
+            font-weight: normal;
+            font-size: 2.6rem;
+            line-height: 14px;
+            color: #43536F;
+            padding-left: 0.8rem;
+          }
+
+          p {
+            font-weight: normal;
+            font-size: 1rem;
+            line-height: 14px;
+            color: #000000;
+            padding-top: 1rem;
+          }
+        }
+      }
+    }
+
+    &--stats {
+      @include flex-display(row);
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 2.5rem;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 14px;
+      color: #5F5C7F;
+
+      .status {
+        @include flex-display(row);
+        justify-content: space-between;
+
+        div {
+          width: 1.1rem;
+          height: 1.1rem;
+          border-radius: 50%;
+        }
+
+        p, span {
+          margin: 0 1.5rem;
+        }
+      }
+
+      .status-wrap {
+        margin-right: 14rem;
+        margin-top: 1rem;
+
+        span {
+          margin: 0 2.5rem;
+        }
+      }
+
+      .status-approved {
+        border: 2px solid #5F5C7F;
+      }
+
+      .status-rejected {
+        border: 2px solid #9EABBE;
+      }
+
+      .status-pending {
+        border: 2px solid #FFAD0D;
+      }
     }
   }
   
+}
+
+// RecentView Component
+.recent {
+  .card {
+    @include flex-display(column);
+    flex: 0 0 32%;
+    text-align: left;
+    background-color: $color-white;
+  
+    h1 {
+      margin: 2.8rem 3rem;
+      font-size: 1rem;
+      font-weight: 800;
+      color: #4e586a;
+      line-height: 1.4;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+  
+    h1:after {
+      content: "";
+      display: block;
+      width: 4rem;
+      padding-top: 0.8rem;
+      border-bottom: 2px solid $color-primary;
+    }
+  
+    .header {
+      margin-bottom: 2rem;
+    }
+  
+    .document {
+      display: flex;
+      flex-direction: row;
+      margin: 1rem 4rem;
+  
+      .doc-icon i {
+        font-size: 2.5rem;
+        color: #7396fd;
+        opacity: 0.6;
+      }
+  
+      .doc-text {
+        padding: 0 1rem;
+      }
+  
+      .doc-text h2 {
+        margin: 0;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        color: $color-black-sub;
+      }
+  
+      .doc-text p {
+        margin: 0;
+        font-size: 0.9rem;
+        color: #a6aebc;
+        letter-spacing: 1px;
+      }
+    }
+  }
 }

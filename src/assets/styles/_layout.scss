@@ -14,8 +14,7 @@
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
+    @include flex-display(column);
     background: #f6f9ff;
     flex: 1;
 
@@ -25,15 +24,13 @@
 }
 
 .dashboard {
-    display: flex;
-    flex-direction: column;
+    @include flex-display(column);
     justify-content: space-between;
     margin-top: 2rem;
 }
 
 .documents {
-    display: flex;
-    flex-direction: row;
+    @include flex-display(row);
     margin-top: 4.5%;
     height: 29.5rem;
     background: $color-white;
@@ -41,5 +38,9 @@
 }
 
 .recent {
-
+    @include flex-display(row);
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    height: 40%;
+    border: 2px solid black;
 }
