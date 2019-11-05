@@ -1,20 +1,22 @@
 import React from 'react';
 import pic from '../assets/images/displaypic.jpg';
 
-const User = () => {
+const User = (props) => {
+    const { user } = props;
+
     return (
         <div className="user">
             <div className="user__image">
                 <img src={pic} alt="profile"/>
             </div>
             <div className="user__fullname">
-                <p className="user__fullname--bold">Jaohne Samue</p>
+                <p className="user__fullname--bold">{user.name}</p>
             </div>
             <div className="user__designation">
-                <p>Front Desk Officer</p>
+                <p>{user.designation}</p>
             </div>
             <div className="user__department">
-                <p>Finance</p>
+                <p>{user.department}</p>
             </div>
       </div>
     );
