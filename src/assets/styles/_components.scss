@@ -17,7 +17,8 @@
   
       img {
         width: 100%;
-        margin: 2rem auto;
+        max-height: 100%;
+        margin: 0 auto;
         border-radius: 1.6rem;
         object-fit: contain;
       }
@@ -337,11 +338,20 @@
           text-overflow: ellipsis;
 
           div {
-            border: 2px solid green;
+            border: 2px solid $color-white;
+            max-width: 2.7rem;
+            max-height: 2.5rem;
+            
+            img {
+              height: 100%;
+              width: 100%;
+              object-fit: contain;
+              border-radius: 50%;
+            }
           }
 
           .owner-name {
-            margin-left: -20%;
+            margin-left: -30%;
           }
 
           .review {
@@ -544,9 +554,9 @@
 
   .card2 {
     @include flex-display(column);
-    flex: 0 0 32%;
     text-align: left;
     background-color: $color-white;
+    flex: 0 0 32.5%;
 
     hr {
       width: 70%;
@@ -648,7 +658,7 @@
   
       .user-icon img {
         width: 100%;
-        height: 20px;
+        height: 100%;
         border-radius: 20px;
       }
   
@@ -663,6 +673,80 @@
       .user-comment p span {
         font-weight: 700;
         line-height: 5px;
+      }
+    }
+  }
+
+  .card3 {
+    @include flex-display(column);
+    background-color: $color-white;
+    flex: 0 0 32%;
+
+    .header {
+      @include flex-display(row);
+      justify-content: space-between;
+      margin-bottom: 2rem;
+
+      h1 {
+        margin: 2.8rem 3rem;
+        font-size: 1rem;
+        font-weight: 800;
+        color: #4E586A;
+        line-height: 14px;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+      }
+
+      h1:after {
+        content: "";
+        display: block;
+        width: 4rem;
+        padding-top: 0.8rem;
+        border-bottom: 2px solid $color-primary;
+      }
+
+      .select-label select {
+        margin: 2.8rem 1.5rem;
+        border: 0.5px solid #CED8E7;
+        border-radius: 3px;
+
+        option {
+          font-size: 1.2rem;
+          line-height: 18px;
+          color: #43536F;
+          padding: auto;
+        }
+      }
+    }
+
+    .chart-legend {
+      @include flex-display(row);
+      justify-content: space-around;
+      margin: 1rem 2rem 1rem 2rem;
+
+      &__approved, &__pending {
+        @include flex-display(row);
+        justify-content: space-between;
+
+        div {
+          width: 1.7em;
+          height: 1.7rem;
+          background: #82B1ED;
+          border-radius: 3px;
+        }
+
+        p {
+          font-size: 1rem;
+          line-height: 20px;
+          color: $color-black-sub;
+          padding-left: 20%;
+        }
+      }
+
+      &__pending {
+        div {
+          background: #E1EAF5;
+        }
       }
     }
   }

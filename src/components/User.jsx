@@ -1,10 +1,11 @@
 import React from 'react';
+import pic from '../assets/images/displaypic.jpg';
 
 const User = () => {
     return (
         <div className="user">
             <div className="user__image">
-                <img src="" alt="profile"/>
+                <img src={pic} alt="profile"/>
             </div>
             <div className="user__fullname">
                 <p class="user__fullname--bold">Jaohne Samue</p>

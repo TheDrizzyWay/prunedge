@@ -1,4 +1,5 @@
 import React from 'react';
+import pic from '../assets/images/displaypic.jpg';
 
 const DocumentsView = () => {
     return (
@@ -23,7 +24,7 @@ const DocumentsView = () => {
                             <td>12-Jan-2018</td>
                             <td class="review-column">
                                 <div>
-                                    <img src="" alt=""/>
+                                    <img src={pic} alt="owner pic"/>
                                 </div>
                                 <p className="owner-name">Olumide Mich...</p>
                                 <p className="review">Review</p>
@@ -36,7 +37,7 @@ const DocumentsView = () => {
                             <td>12-Jan-2018</td>
                             <td class="review-column">
                                 <div>
-                                    <img src="" alt=""/>
+                                <img src={pic} alt="owner pic"/>
                                 </div>
                                 <p className="owner-name">Segun Oni</p>
                                 <p className="review">Review</p>
@@ -49,7 +50,7 @@ const DocumentsView = () => {
                             <td>12-Jan-2018</td>
                             <td class="review-column">
                                 <div>
-                                    <img src="" alt=""/>
+                                    <img src={pic} alt="owner pic"/>
                                 </div>
                                 <p className="owner-name">Tola White</p>
                                 <p className="review">Review</p>
@@ -62,7 +63,7 @@ const DocumentsView = () => {
                             <td>12-Jan-2018</td>
                             <td class="review-column">
                                 <div>
-                                    <img src="" alt=""/>
+                                    <img src={pic} alt="owner pic"/>
                                 </div>
                                 <p className="owner-name">Enobong Mich</p>
                                 <p className="review">Review</p>

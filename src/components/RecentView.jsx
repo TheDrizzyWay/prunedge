@@ -1,4 +1,5 @@
 import React from 'react';
+import pic from '../assets/images/displaypic.jpg';
 
 const RecentView = () => {
     return (
@@ -62,7 +63,7 @@ const RecentView = () => {
                     <div className="doc-content">
                         <div className="user">
                             <div className="user-icon">
-                                <img src="" alt="" />
+                                <img src={pic} alt="user pic" />
                             </div>
                             <div className="user-comment">
                                 <p>Segun Oni has approved, <span>Business proposal document.docx</span></p>
@@ -83,12 +84,35 @@ const RecentView = () => {
                     <div className="doc-content">
                         <div className="user">
                             <div className="user-icon">
-                                <img src="" alt="" />
+                                <img src={pic} alt="user pic" />
                             </div>
                             <div className="user-comment">
                                 <p>Lorem ipsum dolor sit amet, <span>consectetur adipiscing elit</span></p>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="card3">
+                <div className="header">
+                    <h1>Analysis</h1>
+                    <label className="select-label" htmlFor="document-flow">
+                        <select name="option">
+                            <option value="department" selected>Document flow by dept</option>
+                            <option value="unit">Document flow by unit</option>
+                        </select>
+                    </label>
+                </div>
+                <div className="chart-container"></div>
+                <div className="chart-legend">
+                    <div className="chart-legend__approved">
+                        <div></div>
+                        <p>Approved</p>
+                    </div>
+                    <div className="chart-legend__pending">
+                        <div></div>
+                        <p>Pending</p>
                     </div>
                 </div>
             </div>
