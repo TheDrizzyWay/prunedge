@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Content component should render Content 1`] = `ShallowWrapper {}`;
+
+exports[`Menu component should render Menu 1`] = `ShallowWrapper {}`;
