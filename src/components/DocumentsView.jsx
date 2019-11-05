@@ -11,6 +11,7 @@ const DocumentsView = () => {
                 </div>
                 <div className="documents__pending--table">
                     <table>
+                        <tbody>
                         <tr className="table-header">
                             <th>File name</th>
                             <th>Class <div className="filler-2"></div></th>
@@ -69,6 +70,7 @@ const DocumentsView = () => {
                                 <p className="review">Review</p>
                             </td>
                         </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>
