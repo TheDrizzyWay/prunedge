@@ -719,6 +719,117 @@
       }
     }
 
+    .chart-container {
+      #bar-graph {
+        background: transparent;
+        display: block;
+        height: 17.5rem;
+        padding: 0;
+        position: relative;
+        width: 30rem;
+
+        tr, th, td {
+          bottom: 2rem;
+          margin: 0;
+          padding: 0;
+          position: absolute;
+          text-align: center;
+          width: 3rem;
+          z-index: 2;
+        }
+
+        tbody tr {
+          height: 18rem;
+          padding-top: 2px;
+        }
+
+        #section-1 {
+          left: 0.5rem; 
+          margin: 0 1rem 1rem -1rem;
+    
+          .before { 
+            height: 3.7rem; 
+          }
+          .after { 
+            height: 6.6rem; 
+          }
+        }
+
+        #section-2 {
+          left: 7.5rem;
+          margin: 0 1rem 1rem -1rem;
+
+          .before { 
+            height: 7.2rem; 
+          }
+
+          .after { 
+            height: 4.4rem; 
+          }
+        }
+
+        #section-3 {
+          left: 14.5rem;
+          margin: 0 1rem 1rem -1rem;
+
+          .before {
+            height: 5.3rem; 
+          }
+
+          .after {
+            height: 10rem;
+          }
+        }
+
+        #section-4 {
+          left: 21.5rem;
+          margin: 0 1rem 1rem -1rem;
+
+          .before { 
+            height: 12.5rem; 
+          }
+
+          .after { 
+            height: 10rem; 
+          }
+        }
+      }
+  
+    #bar-graph tbody th {
+        bottom: -1.5rem;
+        font-weight: normal;
+        color: $color-black-sub;
+        line-height: 18px;
+        vertical-align: top;
+        margin-left: 4.75rem;
+    }
+  
+    #bar-graph .bar {
+        border-bottom: none;
+        border: 1px solid;
+        color: #000;
+        width: 2rem;
+    }
+  
+    #bar-graph tbody {
+        display: block;
+        height: 20rem;
+    }
+  
+    #bar-graph tbody .before {
+        background-color: #E1EAF5;
+        border-color: transparent;
+        left: 5rem;
+    }
+  
+    #bar-graph tbody .after {
+        background-color: #82B1ED;
+        border-color: transparent;
+        left: 6rem;
+      }
+  
+    }
+
     .chart-legend {
       @include flex-display(row);
       justify-content: space-around;

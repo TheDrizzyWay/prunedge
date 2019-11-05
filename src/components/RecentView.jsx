@@ -10,7 +10,7 @@ const RecentView = () => {
                 </div>
                 <div className="document">
                     <div className="doc-icon">
-                        <i class="far fa-file-alt"></i>
+                        <i className="far fa-file-alt"></i>
                     </div>
                     <div className="doc-text">
                         <h2>Alpha deta Business Proposal</h2>
@@ -19,7 +19,7 @@ const RecentView = () => {
                 </div>
                 <div className="document">
                     <div className="doc-icon">
-                        <i class="far fa-file-alt"></i>
+                        <i className="far fa-file-alt"></i>
                     </div>
                     <div className="doc-text">
                         <h2>Presentation Slides</h2>
@@ -28,7 +28,7 @@ const RecentView = () => {
                 </div>
                 <div className="document">
                     <div className="doc-icon">
-                        <i class="far fa-file-alt"></i>
+                        <i className="far fa-file-alt"></i>
                     </div>
                     <div className="doc-text">
                         <h2>Property Invoice</h2>
@@ -37,7 +37,7 @@ const RecentView = () => {
                 </div>
                 <div className="document">
                     <div className="doc-icon">
-                        <i class="far fa-file-alt"></i>
+                        <i className="far fa-file-alt"></i>
                     </div>
                     <div className="doc-text">
                         <h2>Alex Interview Report</h2>
@@ -99,12 +99,37 @@ const RecentView = () => {
                     <h1>Analysis</h1>
                     <label className="select-label" htmlFor="document-flow">
                         <select name="option">
-                            <option value="department" selected>Document flow by dept</option>
+                            <option value="department" defaultValue>Document flow by dept</option>
                             <option value="unit">Document flow by unit</option>
                         </select>
                     </label>
                 </div>
-                <div className="chart-container"></div>
+                <div className="chart-container">
+                    <table id="bar-graph">
+                        <tbody>
+                            <tr id="section-1">
+                                <th scope="row">Acc</th>
+                                <td className="before bar"></td>
+                                <td className="after bar"></td>
+                            </tr>
+                            <tr id="section-2">
+                                <th scope="row">HR</th>
+                                <td className="before bar"></td>
+                                <td className="after bar"></td>
+                            </tr>
+                            <tr id="section-3">
+                                <th scope="row">Finance</th>
+                                <td className="before bar"></td>
+                                <td className="after bar"></td>
+                            </tr>
+                            <tr id="section-4">
+                                <th scope="row">Media</th>
+                                <td className="before bar"></td>
+                                <td className="after bar"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
                 <div className="chart-legend">
                     <div className="chart-legend__approved">
                         <div></div>
