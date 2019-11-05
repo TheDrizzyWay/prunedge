@@ -2,8 +2,7 @@
     max-width: 128rem;
     margin: 5rem auto;
     height: 92.7rem;
-    display: flex;
-    flex-direction: row;
+    @include flex-display(row);
 }
 
 .sidebar {
@@ -42,5 +41,4 @@
     justify-content: space-between;
     margin-top: 1.5rem;
     height: 40%;
-    border: 2px solid black;
 }
